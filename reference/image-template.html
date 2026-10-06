@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Post image template</title>
+<!--
+  Four layouts in one file. Pick one with ?layout=number | checklist | diagram | photo
+  Edit TEXT below, and the two brand variables in :root. Nothing else needs touching.
+
+  Render (macOS):
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu \
+    --screenshot=out.png --window-size=1200,1500 --force-device-scale-factor=2 \
+    --hide-scrollbars "file://$PWD/reference/image-template.html?layout=number"
+-->
+<style>
+  :root {
+    /* ---- the only two brand settings ---- */
+    --accent: #16a34a;
+    --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* ------------------------------------- */
+    --ink: #10151c;
+    --muted: #5b6673;
+    --line: #e4e8ed;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 1500px; }
+  body {
+    background: var(--bg);
+    font-family: var(--font);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+  }
+  .card {
+    width: 1200px; height: 1500px;
+    padding: 96px;
+    display: none;
+    flex-direction: column;
+    position: relative;
+  }
+  .card.on { display: flex; }
+  .card::before {
+    content: ""; position: absolute; left: 0; top: 0;
+    width: 16px; height: 100%; background: var(--accent);
+  }
+  .kicker {
+    font-size: 30px; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--accent);
+  }
+  h1 { font-size: 84px; line-height: 1.08; font-weight: 800; letter-spacing: -.02em; }
+  h1 em { font-style: normal; color: var(--accent); }
+  .sub { font-size: 38px; line-height: 1.4; color: var(--muted); }
+  .foot {
+    margin-top: auto; padding-top: 40px; border-top: 2px solid var(--line);
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-size: 30px; color: var(--muted);
+  }
+  .foot b { color: var(--ink); font-size: 32px; }
+
+  /* number */
+  .figure { font-size: 320px; line-height: .9; font-weight: 800; letter-spacing: -.04em; color: var(--accent); }
+  .center { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 28px; }
+
+  /* checklist */
+  ul { list-style: none; display: flex; flex-direction: column; gap: 34px; margin-top: 56px; }
+  li { display: flex; gap: 28px; align-items: flex-start; font-size: 40px; line-height: 1.3; }
+  li span.box {
+    flex: 0 0 48px; width: 48px; height: 48px; margin-top: 4px;
+    border: 4px solid var(--accent); border-radius: 10px;
+    position: relative;
+  }
+  li span.box::after {
+    content: ""; position: absolute; left: 10px; top: 2px;
+    width: 18px; height: 30px; border: 5px solid var(--accent);
+    border-top: 0; border-left: 0; transform: rotate(40deg);
+  }
+
+  /* diagram */
+  .flow { display: flex; flex-direction: column; gap: 0; margin-top: 56px; }
+  .step {
+    border: 4px solid var(--line); border-left: 10px solid var(--accent);
+    border-radius: 18px; padding: 34px 40px;
+  }
+  .step b { display: block; font-size: 38px; margin-bottom: 8px; }
+  .step i { font-style: normal; font-size: 30px; color: var(--muted); }
+  .arrow { height: 54px; display: flex; align-items: center; justify-content: center; }
+  .arrow::after {
+    content: ""; width: 4px; height: 54px; background: var(--line);
+  }
+
+  /* photo */
+  .photo-wrap { position: absolute; inset: 0; z-index: 0; }
+  .photo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(10,16,24,0) 38%, rgba(10,16,24,.9) 100%);
+  }
+  .card.photo { color: #fff; z-index: 1; justify-content: flex-end; }
+  .card.photo h1 { font-size: 78px; }
+  .card.photo .foot { border-top-color: rgba(255,255,255,.3); color: rgba(255,255,255,.75); }
+  .card.photo .foot b { color: #fff; }
+  .card.photo .kicker { color: #fff; margin-top: auto; }
+  .card.photo h1 { margin-top: 12px; }
+  .ph {
+    width: 100%; height: 100%;
+    background: repeating-linear-gradient(45deg, #2b3440 0 28px, #222a34 28px 56px);
+    display: flex; align-items: flex-start; justify-content: center; padding-top: 140px;
+    color: #8b97a6; font-size: 34px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== EDIT THE TEXT BELOW, NOTHING ELSE ===== -->
+<script>
+  const TEXT = {
+    brand:   "Your Company",
+    handle:  "yoursite.com",
+
+    number:  { kicker: "Measured", figure: "15%", line: "fewer calls after the app shipped - with no change to the call centre" },
+
+    headline: { kicker: "Platform deadline", h1: "Your Android app has <em>26 days</em>" },
+
+    checklist: {
+      kicker: "Before you scope an app",
+      h1: "Four questions that decide the budget",
+      items: [
+        "What is the smallest version a real user could use on purpose?",
+        "Which feature survives if the launch slips by a month?",
+        "Who owns the date of the next release?",
+        "What breaks at the next platform step?"
+      ]
+    },
+
+    diagram: {
+      kicker: "How it runs",
+      h1: "From a recording to a published post",
+      steps: [
+        ["Recording", "a client call, a webinar, thirty minutes is enough"],
+        ["Cores", "timecode, verbatim quote, verdict"],
+        ["Post and image", "one thought, one inside fact, one action"],
+        ["Your yes, then the queue", "nothing goes out before it"]
+      ]
+    },
+
+    photo: { file: "" }   // put a local path or URL here; empty shows a placeholder
+  };
+  // ===== end of the text you edit =====
+</script>
+
+<div class="card" id="number">
+  <div class="kicker"></div>
+  <div class="center">
+    <div class="figure"></div>
+    <div class="sub"></div>
+  </div>
+  <div class="foot"><b></b><span></span></div>
+</div>
+
+<div class="card" id="checklist">
+  <div class="kicker"></div>
+  <h1></h1>
+  <ul></ul>
+  <div class="foot"><b></b><span></span></div>
+</div>
+
+<div class="card" id="diagram">
+  <div class="kicker"></div>
+  <h1></h1>
+  <div class="flow"></div>
+  <div class="foot"><b></b><span></span></div>
+</div>
+
+<div class="photo-wrap" id="photo-bg" style="display:none"></div>
+<div class="card photo" id="photo">
+  <div class="kicker"></div>
+  <h1></h1>
+  <div class="foot"><b></b><span></span></div>
+</div>
+
+<script>
+  const layout = new URLSearchParams(location.search).get("layout") || "number";
+  const card = document.getElementById(layout) || document.getElementById("number");
+  card.classList.add("on");
+
+  // footer on every layout
+  card.querySelector(".foot b").textContent = TEXT.brand;
+  card.querySelector(".foot span").textContent = TEXT.handle;
+
+  if (layout === "number") {
+    card.querySelector(".kicker").textContent = TEXT.number.kicker;
+    card.querySelector(".figure").textContent = TEXT.number.figure;
+    card.querySelector(".sub").textContent = TEXT.number.line;
+  }
+
+  if (layout === "checklist") {
+    card.querySelector(".kicker").textContent = TEXT.checklist.kicker;
+    card.querySelector("h1").innerHTML = TEXT.checklist.h1;
+    card.querySelector("ul").innerHTML = TEXT.checklist.items
+      .map(t => `<li><span class="box"></span><span>${t}</span></li>`).join("");
+  }
+
+  if (layout === "diagram") {
+    card.querySelector(".kicker").textContent = TEXT.diagram.kicker;
+    card.querySelector("h1").innerHTML = TEXT.diagram.h1;
+    card.querySelector(".flow").innerHTML = TEXT.diagram.steps
+      .map(([a, b]) => `<div class="step"><b>${a}</b><i>${b}</i></div>`)
+      .join('<div class="arrow"></div>');
+  }
+
+  if (layout === "photo") {
+    const bg = document.getElementById("photo-bg");
+    bg.style.display = "block";
+    bg.innerHTML = TEXT.photo.file
+      ? `<img src="${TEXT.photo.file}"><div class="scrim"></div>`
+      : `<div class="ph">put a photo path in TEXT.photo.file</div><div class="scrim"></div>`;
+    card.querySelector(".kicker").textContent = TEXT.headline.kicker;
+    card.querySelector("h1").innerHTML = TEXT.headline.h1;
+  }
+</script>
+</body>
+</html>

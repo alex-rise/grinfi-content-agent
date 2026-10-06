@@ -1,0 +1,7 @@
+# Facts about a specific business stay on the machine that works for it.
+business/
+!business/clients/README.md
+
+.DS_Store
+node_modules/
+*.log
