@@ -7,11 +7,11 @@ rewritten - never pasted - for the others.
 
 | Platform | Length | Form | What matters |
 | --- | --- | --- | --- |
-| **LinkedIn** (profile) | 900-1,800 characters | a teardown: claim → mechanism → inside fact → action | a short first line collapses the post to "see more", and that click counts as engagement; the link goes in the first comment |
+| **LinkedIn** (profile) | 900-1,800 characters | a teardown: claim → mechanism → inside fact → action, or a document post (carousel as PDF) | a short first line collapses the post to "see more", and that click counts as engagement; the link goes in the first comment |
 | **LinkedIn** (company page) | the same | the same, minus the personal story | reach is a fraction of a personal profile's: the page carries announcements, the person carries opinions |
 | **Threads** | 300-600 characters | one thought, first person, practice | no links, only the profile; a long post is rewritten for here, not pasted |
 | **X** | one or two posts | the shortest thing in the material, a number in the first line | a link in the post costs reach - put it in a reply |
-| **Instagram** | caption 150-300, the image does the work | carousel or a single strong image | image-first: a text post without a picture does not exist here. Five to eight slides, the first two are the hook |
+| **Instagram** | caption 150-300, the image does the work | carousel or a single strong image | image-first: a text post without a picture does not exist here. Five to eight slides, the first two are the hook; built from `carousel-template.html` as PNGs |
 | **Facebook Page** | 600-1,200 characters | more narrative, with a photograph | **a personal Facebook profile cannot be scheduled by any tool** - Meta allows Pages only. A personal line is written and pasted by hand |
 | **Short video** | 45-60 seconds | hook, three points, what to do | not in this queue: text and images only |
 
@@ -49,7 +49,8 @@ A single thirty-minute recording usually holds:
 1. One LinkedIn teardown - the mechanism, in full.
 2. One short first-person post for Threads - the single sharpest line.
 3. One number post for X - the measurement, nothing else.
-4. One carousel for Instagram - the same mechanism, as steps.
+4. One carousel - the same mechanism as steps, published twice: as a PDF document
+   on LinkedIn and as PNG slides on Instagram.
 5. One narrative post for a Facebook Page - the same thing, told as what happened.
 
 Same material, five different shapes, published across two weeks rather than one

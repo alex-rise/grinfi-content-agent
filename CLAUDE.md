@@ -52,16 +52,18 @@ first three, and that is exactly why their content reads like everyone else's.
    what is absent from their speech. No recording means no voice file - write
    neutrally and say what is missing.
 5. **Channels and approval.** Where you publish, in what languages, who says go.
-6. **Writing** (`writing`) and **visuals** (`visuals`).
-7. **Publishing** (`publishing`). Their own Buffer, their own channels, their
+6. **Planning** (`planning`). The week is built from cores, never from a list of
+   topics: one core, one post, and an empty slot means go back to mining.
+7. **Writing** (`writing`) and **visuals** (`visuals`).
+8. **Publishing** (`publishing`). Their own Buffer, their own channels, their
    yes on every text.
-8. **Measurement.** Numbers per post come back into `what-works.md`. Once a
+9. **Measurement.** Numbers per post come back into `what-works.md`. Once a
    month, review your own top ten percent of the last ninety days.
 
 ## Memory about one business
 
-Six files in `business/clients/<client>/`, and no more: extra files are files
-nobody opens.
+Six memory files in `business/clients/<client>/`, and no more: extra files are
+files nobody opens.
 
 | File | What is in it |
 | --- | --- |
@@ -71,6 +73,9 @@ nobody opens.
 | `channels.md` | platforms, languages, who is the face, who approves, access |
 | `materials.md` | the catalogue: where photos, recordings and screenshots are, and what has been used |
 | `what-works.md` | measurements of their posts: what got a response, and why |
+
+Plus one working file, `plan.md` - the queue for the coming weeks. It is not
+memory: it changes every week and is owned by the `planning` skill.
 
 Cores from recordings live in `<client>/sources/`, one file per recording, with
 the provenance, the cores and the "never publish" list together in it.
@@ -94,7 +99,8 @@ the provenance, the cores and the "never publish" list together in it.
 | Step | How |
 | --- | --- |
 | Mining recordings into cores | `yt-dlp` with auto-subtitles for public video, the meeting service's own export for calls - free |
-| Post images | an HTML template rendered by headless Chrome, or opened and screenshotted |
+| Post images | `reference/image-template.html`, four layouts, rendered by headless Chrome |
+| Carousels | `reference/carousel-template.html`: one PDF for a LinkedIn document, one PNG per slide for Instagram, both from the same file |
 | Publishing | Buffer API, available on every plan including free |
 | Measurement | Buffer analytics plus the numbers on the post itself |
 | Video and dubbing | **not in this queue**: text and images only |

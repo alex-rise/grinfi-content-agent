@@ -42,7 +42,31 @@ image wherever there is an enumeration.
   time starting from slide two, so slide two has to work on its own.
 - One slide, one thought: a simple image and one or two sentences.
 - The last slide is an action: what to do, or what to write in the comments.
-- File format: vertical PDF.
+
+`reference/carousel-template.html` builds the whole thing. Edit the `SLIDES` array -
+each slide is `cover`, `text`, `number` or `steps` - and render **both** outputs
+from the same file:
+
+```bash
+# LinkedIn document post: one PDF, all slides, one command
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
+  --disable-gpu --no-pdf-header-footer --print-to-pdf=carousel.pdf \
+  "file://$PWD/reference/carousel-template.html"
+
+# Instagram: one PNG per slide
+for n in 1 2 3 4 5 6; do
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless \
+    --disable-gpu --screenshot=slide-$n.png --window-size=1080,1350 \
+    --force-device-scale-factor=2 --hide-scrollbars \
+    "file://$PWD/reference/carousel-template.html?slide=$n"
+done
+```
+
+LinkedIn takes the PDF as a document post. Instagram takes the PNGs as a gallery.
+Same slides, two formats, no design tool and no manual assembly.
+
+The footer carries "swipe →" on every slide but the last, which carries the handle:
+that is deliberate, it measurably holds people through the middle slides.
 
 ## Sizes
 

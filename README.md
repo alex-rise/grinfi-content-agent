@@ -107,8 +107,8 @@ give the agent a key at all.
 
 | Folder | What is in it |
 | --- | --- |
-| `.claude/skills/` | the work itself: onboarding, mining, writing, visuals, publishing |
-| `reference/` | the craft: per-platform forms, what we measured, what never to write |
+| `.claude/skills/` | the work itself: onboarding, mining, planning, writing, visuals, publishing |
+| `reference/` | per-platform forms, the materials rules, and two tested image templates: single images and carousels |
 | `examples/` | finished posts with the image brief for each, to see the level |
 | `business/` | **your** business: facts, voice, channels, material, results. Never leaves your machine - it is outside git |
 
@@ -116,7 +116,7 @@ give the agent a key at all.
 
 ```
 meet the business → collect the raw material → mine it into cores
-   → facts and voice → write → image → your yes → queue → measure
+   → facts and voice → plan the week → write → image → your yes → queue → measure
 ```
 
 Skipping the first three is what makes the rest read like everyone else.
