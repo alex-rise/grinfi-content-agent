@@ -7,6 +7,11 @@ below into someone else's feed is exactly the failure this kit exists to prevent
 Each example has three parts: the post as it goes out, what makes it work, and the
 image brief - enough for an agent to build the picture without asking.
 
+All three are written in paragraphs, because that is how their author writes. That
+is a voice, not the rule: another author ships short broken lines with ❌/✅ markers,
+and their posts should keep that shape. Take the shape from the client's `voice.md`,
+the craft from here.
+
 ---
 
 ## 1. Measurement
@@ -15,8 +20,8 @@ image brief - enough for an agent to build the picture without asking.
 We sent the same offer two ways to the same kind of people. One got 11% replies,
 the other 3.4%.
 
-Same list. Same sender. Same week. The only difference was the shape of the first
-message.
+Same list and the same sender, in the same week. The only difference was the shape
+of the first message.
 
 The 3.4% version did what everyone does. It opened with who we are, listed what
 the product does in bullets, and ended with a call booking link.
@@ -30,9 +35,8 @@ like one. A question that costs four seconds to answer gets answered, and the
 second message is where the actual conversation starts.
 
 The part I did not expect: messages four and five in the same sequence got zero
-replies. Not few. Zero, across the whole run. After three touches, a cold thread
-is not cold any more, it is closed - and the follow-up is only annoying the people
-who already decided.
+replies, across the whole run. After three touches a cold thread is closed, and the
+follow-up only annoys the people who already decided.
 
 If you are running outreach right now, open your sequence and count the characters
 in message one. Over 600 and you are writing a brochure.
@@ -56,10 +60,9 @@ the first message". Accent colour on the figure, nothing else on the card.
 Where the list came from mattered more than what we wrote in it. 29.3% replies
 against 6.8%, same message.
 
-Everyone sells you the copy. Hooks, frameworks, the perfect opener. We spent a
-year on that too, and the copy is worth about three points.
-
-The list is worth twenty.
+Hooks, frameworks, the perfect opener: the copy is what gets sold. We spent a
+year on that too, and the copy is worth about three points. The list is worth
+twenty.
 
 Two sources, same sequence, same week. One list was built from a described
 portrait, with every profile actually read before it went in. The other was a
@@ -96,8 +99,8 @@ lists`. Line beneath: "where the list came from, measured across 3,812 invites".
 A bad list costs more than a bad message, and you can see it before you send
 anything.
 
-Four checks, ten minutes, on a sample of twenty rows. Not the whole file - twenty
-rows tells you everything.
+Four checks, ten minutes, on a sample of twenty rows. Twenty rows tell you what
+the whole file would.
 
 Open twenty profiles at random and ask:
 

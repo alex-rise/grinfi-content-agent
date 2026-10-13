@@ -100,6 +100,20 @@ google-chrome --headless --disable-gpu --screenshot=out.png \
   "file://$PWD/reference/image-template.html?layout=number"
 ```
 
+```powershell
+# Windows (PowerShell). Edge works with the same flags:
+# "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+$page = "file:///" + ($PWD.Path -replace '\\','/') + "/reference/image-template.html?layout=number"
+& "C:\Program Files\Google\Chrome\Application\chrome.exe" --headless --disable-gpu `
+  --screenshot="$PWD\out.png" --window-size=1200,1500 --force-device-scale-factor=2 `
+  --hide-scrollbars $page
+```
+
+On Windows, Chrome may print a few `ERROR ... external_registry_loader` lines
+before "bytes written to file". They are about installed extensions and do not
+affect the image. The carousel commands above work the same way: swap the Chrome path and
+build the `file:///C:/...` address as shown.
+
 `--force-device-scale-factor=2` is what makes the text sharp; without it the
 headline looks soft on a phone. Layouts are chosen by the `?layout=` parameter:
 `number`, `checklist`, `diagram`, `photo`.

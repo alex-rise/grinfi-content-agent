@@ -23,9 +23,12 @@ In descending order of value:
    so a little smoother.
 3. **Their own articles and posts.** Facts and positions yes; voice only their
    written voice.
-4. **Client threads and support.** This is where objections and the exact wording
+4. **The edits they made to your drafts.** Written voice again, but the most
+   precise kind: every word they replaced goes into `voice.md` as before → after,
+   and every pattern they struck out twice goes into their own stop list.
+5. **Client threads and support.** This is where objections and the exact wording
    of the pain live.
-5. **An automatic meeting recap** (a notetaker, meeting notes). Useful as an
+6. **An automatic meeting recap** (a notetaker, meeting notes). Useful as an
    index. **Not a source of facts** - see the rule below.
 
 Nothing from the first two categories? Ask for one thirty-minute recording where

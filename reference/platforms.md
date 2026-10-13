@@ -7,7 +7,7 @@ rewritten - never pasted - for the others.
 
 | Platform | Length | Form | What matters |
 | --- | --- | --- | --- |
-| **LinkedIn** (profile) | 900-1,800 characters | a teardown: claim → mechanism → inside fact → action, or a document post (carousel as PDF) | a short first line collapses the post to "see more", and that click counts as engagement; the link goes in the first comment |
+| **LinkedIn** (profile) | 900-1,800 characters | a teardown: claim → mechanism → inside fact → action, or a document post (carousel as PDF) | a short first line collapses the post to "see more", and what counts is whether they keep reading after the click; the link goes in the first comment by default, though 2026 reports disagree on the cost of a body link - test it |
 | **LinkedIn** (company page) | the same | the same, minus the personal story | reach is a fraction of a personal profile's: the page carries announcements, the person carries opinions |
 | **Threads** | 300-600 characters | one thought, first person, practice | no links, only the profile; a long post is rewritten for here, not pasted |
 | **X** | one or two posts | the shortest thing in the material, a number in the first line | a link in the post costs reach - put it in a reply |
@@ -34,6 +34,29 @@ circulation. So:
   reliably collects three.
 - Comment on other people's posts too, in the same niche, with something that
   stands on its own. It is the cheapest reach there is.
+
+## Reposts from the team
+
+When colleagues repost the face's post to their own network:
+
+- Each one writes from their own work, first person, one to three sentences, under
+  about forty words. Not a recap, not "great post", not a question to the author
+  as if to a stranger.
+- At least one in a set adds disagreement or an uncomfortable nuance. Agreement
+  alone reads staged.
+- Numbers come from the person reposting, left as a `[placeholder]` until they
+  confirm them.
+- Never invent a failure to sound humble. Before: a repost draft claimed the team
+  had gone a year without results, which was neither true nor believable for a
+  company operating for years. After: a mistake story is small, old and real, or
+  it is absent.
+
+## Comments you write on other people's posts
+
+- No two comments share a construction. Sameness across comments is the first
+  thing that marks them as generated.
+- Put in one detail that cannot be generalised: a month, a number of accounts, a
+  tool by name. Self-correction and doubt are allowed; perfectly optimised is not.
 
 ## Rhythm
 

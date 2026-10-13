@@ -117,7 +117,8 @@ next person starts from where we started.
 - **A fact about one business** goes into `business/clients/<client>/` and
   nowhere else.
 - **Something that worked for one business and then for a second** becomes a
-  line in `business/house/what-works.md`.
+  line in `business/house/what-works.md`. It is local like the client folders:
+  create it the first time, it stays outside git.
 - **Anonymously.** No client names, no client quotes, no client numbers in this
   kit - only the rule, written so that it stands without them. If the rule does
   not read without the name, it is not a rule yet.
