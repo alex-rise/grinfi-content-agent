@@ -31,9 +31,18 @@ In descending order of value:
 6. **An automatic meeting recap** (a notetaker, meeting notes). Useful as an
    index. **Not a source of facts** - see the rule below.
 
-Nothing from the first two categories? Ask for one thirty-minute recording where
-they answer the onboarding questions. It is cheaper than six months of neutral
-text.
+**Before asking for anything, inventory what already exists.** Search their
+channel, their past webinars, the recordings already banked from earlier work,
+the calls someone else on your side already sat in. Asking a busy founder to
+record half an hour that is already on their own YouTube wastes their goodwill
+and marks you as someone who did not look. Before: a request for "one recording
+where you explain your work", repeated three times, against a bank of twenty-one
+recorded streams nobody had checked. After: mine what exists, and ask only for
+what genuinely is not there.
+
+Nothing in the first two categories after you have actually looked? Then ask for
+one thirty-minute recording where they answer the onboarding questions. It is
+cheaper than six months of neutral text.
 
 ## A meeting recap is not a transcript
 
