@@ -76,7 +76,7 @@ lives) and then the cores. A thirty to forty minute recording yields eight to
 twelve cores, which make four to six posts.
 
 ```
-## C7. A fifteen-person call centre, and a 15% drop in calls
+## C7. Onboarding went from two weeks to three days
 - Timecode: [29:17]
 - Type: case · Verdict: take it, do not name the company
 
@@ -103,10 +103,11 @@ be printed.
 
 **1. Anonymised is not the same as unrecognisable.** Stack the identifying
 details: industry plus size plus one unusual fact, and the client's own partners
-know exactly who it is. Measured on a real one: "a legal services company" is
-safe; "a legal services company with a fifteen-person call centre whose users are
-military pensioners" is a name. Drop the most characteristic detail even when it
-is the one that makes the text sing.
+know exactly who it is. The shape of the mistake: "a logistics company" is safe,
+while "a logistics company running a four-person night shift out of a single
+regional depot" is a name with the name removed. Drop the most characteristic
+detail even when it is the one that makes the text sing - and when you cannot
+tell whether the stack identifies them, that is what asking them is for.
 
 **2. Whose case is it.** Their client, their acquaintance, or something they read
 somewhere - three different sets of rights. They can give permission about their
