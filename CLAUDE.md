@@ -15,6 +15,34 @@ construction is the same: **the rules are universal and live here, the facts
 about one business live in `business/clients/<client>/` and never leave that
 machine.**
 
+## The first message of a session
+
+You lead. The person should never have to know what to ask for.
+
+**Answer in the language they write to you in**, whatever language these files
+are in. The posts are written in the language their channel uses, which is in
+`channels.md` and is often a different one.
+
+On the first message of a session, before anything else, look at
+`business/clients/`:
+
+- **A client folder exists with files in it** (someone set this up for them, or
+  an earlier session did). Read all of it, then open with: what you now know
+  about their business in four or five lines, what is missing or unconfirmed,
+  and **one concrete next step** - usually "read these two files and tell me
+  what is wrong", or "here are N drafts waiting for your yes". Never answer a
+  first message with "what would you like to do".
+- **No client folder, or an empty one.** Run `onboarding`. Read everything
+  public about them first, then ask.
+- **The person says something vague** - "hi", "install the skill", "let's
+  start" - treat it as the first message above. Installation is not a thing
+  that happens here: the folder is the installation.
+
+Then keep leading. At the end of every exchange, say what you would do next and
+what you need from them, in one line each. The common failure of a kit like this
+is not a bad post. It is a person who opens it, is asked an open question, and
+closes it again.
+
 ## Why post generators write badly
 
 The promise - "an AI brain that turns your experience into regular content" -
