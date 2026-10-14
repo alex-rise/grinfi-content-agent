@@ -47,15 +47,21 @@ cheaper than six months of neutral text.
 ## A meeting recap is not a transcript
 
 Measured on a real client. The first drafts were built on a notetaker's summary
-of a call. Then the full verbatim transcript of the same call arrived, and:
+of a call. Then the verbatim transcript of the same call arrived, and:
 
-- **the recap had invented a case that was never said** - with an industry, a
-  city and a timeframe. It read like a fact. It would have been published;
 - **the recap had flattened the person's rule into a scare.** In the recording he
   had two different thresholds and his own caveat, "not everyone needs this". The
   caveat was the most convincing thing he said, and the recap had dropped it;
 - **there is no voice in a recap at all.** It writes in flat machine prose. From
-  it you cannot tell one founder from another.
+  it you cannot tell one founder from another;
+- **and one case in the recap could not be found in the transcript at all** - an
+  industry, a city and a number that read like a fact. The first conclusion was
+  that the recap had fabricated it. The real answer, found days later in a
+  colleague's notes: the meeting had a second part, the transcript covered only
+  the first, and the case was said in the part nobody had. **Absence from the
+  material you hold is not evidence of invention.** Before calling anything
+  fabricated, confirm you have the whole recording - length, parts, and who else
+  was in the room taking notes.
 
 So, two rules that are not up for discussion:
 
