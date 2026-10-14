@@ -137,14 +137,27 @@ the provenance, the cores and the "never publish" list together in it.
 
 This kit changes. The person using it should never have to check a repository.
 
-**Once a week at most, on the first message of a session**, when the folder is a
-git clone and nothing is mid-task:
+**On the first message of a session**, when the folder is a git clone and
+nothing is mid-task:
 
-1. Run `git pull --ff-only`. The person's own files live in `business/`, which
-   is outside git, so nothing of theirs is touched.
-2. If it pulled something, read `CHANGELOG.md` and tell them in one or two lines
+1. Check when this folder last looked for updates. There is a file timestamp for
+   it, so this is not a judgement call:
+
+   ```bash
+   find .git/FETCH_HEAD -mtime +7 2>/dev/null || test ! -e .git/FETCH_HEAD && echo due
+   ```
+
+   Nothing printed means it checked within the last seven days: skip all of this
+   and get on with the conversation.
+2. If it is due, run `git pull --ff-only`. The person's own files live in
+   `business/`, which is outside git, so nothing of theirs is touched.
+3. If it pulled something, read `CHANGELOG.md` and tell them in one or two lines
    what is new and what it changes for them. Not a list of commits.
-3. If it pulled nothing, say nothing at all.
+4. If it pulled nothing, say nothing at all. A pull that fails is one line and
+   then the conversation continues.
+
+There is no scheduler and nothing runs in the background: the check happens the
+next time the person opens the folder, not on a particular day.
 
 Never pull in the middle of a task, never pull twice in a day, and never let a
 failed pull become the subject of the conversation: say one line and carry on.

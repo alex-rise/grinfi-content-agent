@@ -18,6 +18,8 @@ not to a developer. Update it in the same commit that changes behaviour.
   to do when someone arrives with a stack of posts written by a previous tool or
   agency.
 - **Updates reach you by themselves** - see "Staying current" in `CLAUDE.md`.
+  The check runs the next time you open the folder, at most once a week, and
+  says one line about what changed. Nothing runs in the background.
 
 ## 13 October 2026
 
