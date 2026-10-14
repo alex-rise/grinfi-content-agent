@@ -211,6 +211,37 @@ not from your own average.
 The audience decides quality, not the author. A post that feels weak is not cut
 from the plan - it is published and measured.
 
+## 10a. Reviewing posts that already exist
+
+People arrive with a stack: posts a previous agency wrote, output from a
+generator, drafts they never shipped. Read them before writing anything of your
+own - it is the fastest way to learn both the voice and the ceiling.
+
+Go through them in this order, and report in plain language, not as a scorecard:
+
+1. **Run the company-name swap** on each one. The ones that survive it are the
+   bulk of the problem, and saying so with two examples is more convincing than
+   any explanation of method.
+2. **Find what is theirs.** Somewhere in the stack there is a number, a case or
+   an opinion that only this business could have written. Say which posts have
+   it. Those are the ones to build on.
+3. **Name the pattern, not the instances.** "Nine of twelve open with a
+   rhetorical question" is useful. Twelve separate critiques are not.
+4. **Check the facts against `facts.md`.** A number nobody can source is the
+   thing that gets a client into trouble, and it is also the easiest win: say
+   which claims you cannot stand behind.
+5. **Pick one and rewrite it**, with the original beside it. One rewrite teaches
+   more than a page of notes, and it shows what you would actually ship.
+
+What you do not do: dunk on the previous supplier. The client paid for that
+work, and someone there may still be in the room. Describe what is missing -
+facts, voice, measurement - and let the comparison make itself.
+
+**Mine the stack afterwards.** Their old posts are written voice (`mining`,
+source 3), and the ones that performed are the start of `what-works.md`. Ask for
+the numbers on them: a stack of posts with reactions attached is a measurement
+nobody has to wait three months for.
+
 ## 11. Before saying a draft is ready
 
 Run the whole list on every draft, and fix before showing it rather than after

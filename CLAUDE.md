@@ -133,6 +133,27 @@ the provenance, the cores and the "never publish" list together in it.
 | Measurement | Buffer analytics plus the numbers on the post itself |
 | Video and dubbing | **not in this queue**: text and images only |
 
+## Staying current
+
+This kit changes. The person using it should never have to check a repository.
+
+**Once a week at most, on the first message of a session**, when the folder is a
+git clone and nothing is mid-task:
+
+1. Run `git pull --ff-only`. The person's own files live in `business/`, which
+   is outside git, so nothing of theirs is touched.
+2. If it pulled something, read `CHANGELOG.md` and tell them in one or two lines
+   what is new and what it changes for them. Not a list of commits.
+3. If it pulled nothing, say nothing at all.
+
+Never pull in the middle of a task, never pull twice in a day, and never let a
+failed pull become the subject of the conversation: say one line and carry on.
+
+**If the folder is not a git clone** (they downloaded a ZIP), say so once, the
+first time it matters, and offer the fix: clone the repository next to this
+folder, move their `business/` folder into the clone, and work there from then
+on. Do it for them if they say yes.
+
 ## How this kit gets better
 
 Every real piece of work must leave a trace here in the same session, or the
